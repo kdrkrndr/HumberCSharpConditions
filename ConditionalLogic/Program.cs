@@ -71,11 +71,28 @@ while (k<20)
    Console.WriteLine(k);
     k++;
 }*/
-string p;
-do
+
+/*
+string password;
+int count = 0;
+
+    do
 {
+
     Console.WriteLine("Enter your password");
-    p=Console.ReadLine();
+        password = Console.ReadLine();
+        count++;
+    if (count>2)
+    {
+        Console.WriteLine("Too many attempt!");
+        break;
+    }
 }
-while (p !="2000");
-Console.WriteLine("Done!");
+while (password !="2026");
+Console.WriteLine("Access granted");
+*/
+string[] courses = { "c#", "sql DB", "Career Path", "Advance C#" };
+foreach (string item in courses)
+{
+    Console.WriteLine($"Course: {item}");
+}
